@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "beer-recommender"
+version = "0.1.0"
+description = ""
+authors = ["Johnathon Hyland <johnathon.hyland@ligo.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
