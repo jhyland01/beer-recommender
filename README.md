@@ -5,16 +5,35 @@ This repository contains the code for a beer recommender system. The system uses
 ## Project Structure
 
 The project has the following structure:
-```
-. ├── data │ ├── raw │ │ └── beer_data.csv │ └── processed │ └── beer_vectors.pkl ├── notebooks │ └── data_exploration.ipynb ├── src │ ├── init.py │ ├── data_processing.py │ ├── model.py │ ├── utils.py │ └── visualizations │ └── plot_embeddings.py ├── tests │ ├── init.py │ ├── test_data_processing.py │ └── test_model.py ├── figures ├── .gitignore └── pyproject.toml
+```bash
+├── data 
+│ ├── raw 
+│ │ └── beer_data.csv 
+│ └── processed 
+│ └── beer_vectors.pkl 
+├── notebooks 
+│ └── data_exploration.ipynb 
+├── src 
+│ ├── init.py 
+│ ├── data_processing.py 
+│ ├── model.py 
+│ ├── utils.py 
+│ └── visualizations 
+│ └── plot_embeddings.py 
+├── tests 
+│ ├── init.py 
+│ ├── test_data_processing.py 
+│ └── test_model.py 
+├── figures 
+├── .gitignore 
+└── pyproject.toml
 ```
 
 ## Installation
 
 This project uses [Poetry](https://python-poetry.org/) for dependency management. To install the dependencies, first install Poetry:
 
-```
-bash
+```bash
 curl -sSL https://install.python-poetry.org | python -
 ```
 
