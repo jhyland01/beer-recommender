@@ -5,10 +5,21 @@ This repository contains the code for a beer recommender system. The system uses
 ## Flow Diagram
 ```mermaid
 graph TD
-    A[User selects 3 beers on the website] --> B[Types into a box and chooses from the filtered list]
-    B --> C[Attributes of these three selections are passed to the neural network via the API]
-    C --> D[The 10 closest beers in embedding space are identified]
-    D --> E[These 10 options are returned to the webpage]
+    subgraph Frontend
+        A[User selects 3 beers]
+        B[Types into a box and chooses from the filtered list]
+        A --> B
+    end
+
+    subgraph Backend
+        C[Attributes of these three selections are passed to the neural network via the API]
+        D[The 10 closest beers in embedding space are identified]
+        E[These 10 options are returned to the webpage]
+    end
+
+    B -->|API| C
+    C --> D
+    D --> E
 ```
 
 ## Project Structure
