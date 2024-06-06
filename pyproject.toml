@@ -7,9 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9, <3.12"
-tensorflow = "^2.15"
+tensorflow = ">=2.13"
 ydata-profiling = "^4.8.3"
 ipykernel = "^6.29.4"
+tensorflow-metal = "^1.1.0"
 
 [build-system]
 requires = ["poetry-core"]
