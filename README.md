@@ -2,6 +2,15 @@
 
 This repository contains the code for a beer recommender system. The system uses a dataset of beer reviews to generate recommendations based on similarity in the embedding space.
 
+## Flow Diagram
+```mermaid
+graph TD
+    A[User selects 3 beers on the website] --> B[Types into a box and chooses from the filtered list]
+    B --> C[Attributes of these three selections are passed to the neural network via the API]
+    C --> D[The 10 closest beers in embedding space are identified]
+    D --> E[These 10 options are returned to the webpage]
+```
+
 ## Project Structure
 
 The project has the following structure:
@@ -19,7 +28,7 @@ The project has the following structure:
 │ ├── model.py 
 │ ├── utils.py 
 │ └── visualizations 
-│ └── plot_embeddings.py 
+│ │ └── plot_embeddings.py 
 ├── tests 
 │ ├── init.py 
 │ ├── test_data_processing.py 
